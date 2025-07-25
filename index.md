@@ -1,5 +1,5 @@
 ---
-layout: slate
+layout: page
 title: INSaFLU Workshop
 permalink: /
 ---
