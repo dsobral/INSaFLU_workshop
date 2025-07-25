@@ -22,12 +22,13 @@ permalink: /
     + [**2.3**: Upload data and metadata and evaluate preprocessing results](#LO2.3)
 
   - [**3**: Generate consensus sequences and characterize them](#LO3)
-    + [**3.1**: Create a project and configure the settings](#LO3.1)
+    + [**3.1**: Create a project and configure settings](#LO3.1)
     + [**3.2**: Add samples to project and analyze results](#LO3.2)
 
   - [**4**: Perform phylogenetic and geotemporal analysis using NextStrain in INSaFLU](#LO4)
-    + [**4.1**: Create Use Qualimap to assess quality of alignments](#LO4.1)  
-    + [**4.2**: Use IGV to visualize the content of a BAM file](#LO4.2)
+    + [**4.1**: Create Nextstrain project, add consensus](#LO4.1)  
+    + [**4.2**: Update metadata and run the build](#LO4.2)  
+    + [**4.3**: Visualize Nextstrain results](#LO4.3)
 
 
 
