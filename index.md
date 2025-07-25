@@ -1,3 +1,8 @@
+layout: page
+title: "INSaFLU Workshop"
+permalink: /
+
+
 # INSaFLU Workshop
 
 ## Learning Objectives:
