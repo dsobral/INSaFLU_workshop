@@ -40,13 +40,13 @@ permalink: /
 <details><summary>Click Here to see the answer</summary><p>
 
 - Extraction and purification of the DNA template (even RNA must usually be converted to cDNA)
-
+<br/>
 - Fragmentation of the DNA template (into a size range that can be accommodated by the machine)
-  
+<br/>
 - Attachment of sequencing tags (to enable reading by the machine)
-  
+<br/>  
 - Amplification of signal (usually trough PCR, often already in the machine)
-  
+<br/>  
 - Reading of signal and conversion into nucleotide bases
   
 </p></details>
