@@ -1,7 +1,8 @@
-layout: page
-title: "INSaFLU Workshop"
+---
+layout: default
+title: INSaFLU Workshop
 permalink: /
-
+---
 
 # INSaFLU Workshop
 
