@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: boot
 title: INSaFLU Workshop
 permalink: /
 ---
