@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: INSaFLU Workshop
 permalink: /
 ---
@@ -22,12 +22,12 @@ permalink: /
     + [**2.3**: Upload data and metadata and evaluate preprocessing results](#LO2.3)
 
   - [**3**: Generate consensus sequences and characterize them](#LO3)
-    + [**3.1**: Use the BWA aligner to align HTS data against a genome](#LO3.1)
-    + [**3.2**: The SAM/BAM alignment format](#LO3.2)
+    + [**3.1**: Create a project and configure the settings](#LO3.1)
+    + [**3.2**: Add samples to project and analyze results](#LO3.2)
 
   - [**4**: Perform phylogenetic and geotemporal analysis using NextStrain in INSaFLU](#LO4)
-    + [**4.1**: Use Qualimap to assess quality of alignments](#LO4.1)  
-    + [**4.2**:Use IGV to visualize the content of a BAM file](#LO4.2)
+    + [**4.1**: Create Use Qualimap to assess quality of alignments](#LO4.1)  
+    + [**4.2**: Use IGV to visualize the content of a BAM file](#LO4.2)
 
 
 
@@ -38,15 +38,15 @@ permalink: /
 **QUESTION**: Can you broadly describe commmon steps in most high throughput sequencing workflows?
 <details><summary>Click Here to see the answer</summary><p>
 
-  * Extraction and purification of the DNA template (even RNA must usually be converted to cDNA)
+- Extraction and purification of the DNA template (even RNA must usually be converted to cDNA)
+
+- Fragmentation of the DNA template (into a size range that can be accommodated by the machine)
   
-  * Fragmentation of the DNA template (into a size range that can be accommodated by the machine)
+- Attachment of sequencing tags (to enable reading by the machine)
   
-  * Attachment of sequencing tags (to enable reading by the machine)
+- Amplification of signal (usually trough PCR, often already in the machine)
   
-  * Amplification of signal (usually trough PCR, often already in the machine)
-  
-  * Reading of signal and conversion into nucleotide bases
+- Reading of signal and conversion into nucleotide bases
   
 </p></details>
 <br/>
@@ -56,60 +56,10 @@ permalink: /
 ## <a id="LO2">2 - Upload data and associated metadata to INSaFLU</a>
 
 
-**QUESTION**: Can you broadly describe commmon steps in most high throughput sequencing workflows?
-<details><summary>Click Here to see the answer</summary><p>
-
-  * Extraction and purification of the DNA template (even RNA must usually be converted to cDNA)
-  
-  * Fragmentation of the DNA template (into a size range that can be accommodated by the machine)
-  
-  * Attachment of sequencing tags (to enable reading by the machine)
-  
-  * Amplification of signal (usually trough PCR, often already in the machine)
-  
-  * Reading of signal and conversion into nucleotide bases
-  
-</p></details>
-<br/>
-<br/>
-
-
-
 ## <a id="LO3">3 - Generate consensus sequences and characterize them</a>
 
-**QUESTION**: Can you broadly describe commmon steps in most high throughput sequencing workflows?
-<details><summary>Click Here to see the answer</summary><p>
-
-  * Extraction and purification of the DNA template (even RNA must usually be converted to cDNA)
-  
-  * Fragmentation of the DNA template (into a size range that can be accommodated by the machine)
-  
-  * Attachment of sequencing tags (to enable reading by the machine)
-  
-  * Amplification of signal (usually trough PCR, often already in the machine)
-  
-  * Reading of signal and conversion into nucleotide bases
-  
-</p></details>
-<br/>
-<br/>
 
 ## <a id="LO4">4 - Perform phylogenetic and geotemporal analysis using NextStrain in INSaFLU</a>
 
-**QUESTION**: Can you broadly describe commmon steps in most high throughput sequencing workflows?
-<details><summary>Click Here to see the answer</summary><p>
 
-  * Extraction and purification of the DNA template (even RNA must usually be converted to cDNA)
-  
-  * Fragmentation of the DNA template (into a size range that can be accommodated by the machine)
-  
-  * Attachment of sequencing tags (to enable reading by the machine)
-  
-  * Amplification of signal (usually trough PCR, often already in the machine)
-  
-  * Reading of signal and conversion into nucleotide bases
-  
-</p></details>
-<br/>
-<br/>
 
