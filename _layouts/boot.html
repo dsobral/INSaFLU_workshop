@@ -290,6 +290,95 @@
       font-weight: 500;
     }
 
+    /* Interactive Quiz Feedback */
+    .quiz-feedback {
+      display: none;
+      margin-top: 1rem;
+      padding: 1.2rem;
+      border-radius: 8px;
+      font-weight: 500;
+      animation: fadeIn 0.3s ease-in;
+    }
+
+    .quiz-feedback.correct-feedback {
+      background: linear-gradient(135deg, #d4edda 0%, #c3e6cb 100%);
+      border: 2px solid #28a745;
+      color: #155724;
+    }
+
+    .quiz-feedback.correct-feedback::before {
+      content: "✅ ";
+      font-size: 1.2rem;
+      margin-right: 0.5rem;
+    }
+
+    .quiz-feedback.incorrect-feedback {
+      background: linear-gradient(135deg, #f8d7da 0%, #f5c6cb 100%);
+      border: 2px solid #dc3545;
+      color: #721c24;
+    }
+
+    .quiz-feedback.incorrect-feedback::before {
+      content: "❌ ";
+      font-size: 1.2rem;
+      margin-right: 0.5rem;
+    }
+
+    .quiz-feedback.warning-feedback {
+      background: linear-gradient(135deg, #fff3cd 0%, #ffeaa7 100%);
+      border: 2px solid #ffc107;
+      color: #856404;
+    }
+
+    .quiz-feedback.warning-feedback::before {
+      content: "⚠️ ";
+      font-size: 1.2rem;
+      margin-right: 0.5rem;
+    }
+
+    .check-answer-btn {
+      background: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-blue) 100%);
+      color: white;
+      border: none;
+      padding: 0.8rem 1.5rem;
+      border-radius: 8px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      margin-top: 1rem;
+    }
+
+    .check-answer-btn:hover:not(:disabled) {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-medium);
+    }
+
+    .check-answer-btn:disabled {
+      background: #6c757d;
+      cursor: not-allowed;
+      transform: none;
+    }
+
+    .quiz-options input[type="radio"]:disabled + label {
+      opacity: 0.6;
+      cursor: not-allowed;
+    }
+
+    .quiz-options input[type="radio"]:disabled {
+      cursor: not-allowed;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(-10px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
     /* Self-Check Components */
     .self-check {
       background: linear-gradient(135deg, #e2f3ff 0%, #f8f9fa 100%);
@@ -517,5 +606,55 @@
 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Interactive Quiz JavaScript -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Handle all quiz questions
+      document.querySelectorAll('.quiz-question').forEach(function(quizContainer) {
+        const options = quizContainer.querySelectorAll('input[type="radio"]');
+        const checkButton = quizContainer.querySelector('.check-answer-btn');
+        const feedbackDiv = quizContainer.querySelector('.quiz-feedback');
+
+        if (checkButton) {
+          checkButton.addEventListener('click', function() {
+            const selectedOption = quizContainer.querySelector('input[type="radio"]:checked');
+
+            if (!selectedOption) {
+              showFeedback(feedbackDiv, 'Please select an answer first!', 'warning');
+              return;
+            }
+
+            const correctAnswer = quizContainer.dataset.correctAnswer;
+            const selectedValue = selectedOption.value;
+
+            // Clear previous feedback
+            feedbackDiv.innerHTML = '';
+
+            if (selectedValue === correctAnswer) {
+              const correctText = quizContainer.dataset.correctText || 'Correct! Well done.';
+              showFeedback(feedbackDiv, correctText, 'correct');
+            } else {
+              const incorrectText = quizContainer.dataset.incorrectText || 'Incorrect. Please review the material and try again.';
+              const correctText = quizContainer.dataset.correctText || '';
+              showFeedback(feedbackDiv, incorrectText + (correctText ? '<br><br><strong>Correct answer explanation:</strong><br>' + correctText : ''), 'incorrect');
+            }
+
+            // Disable options after answering
+            options.forEach(option => option.disabled = true);
+            checkButton.disabled = true;
+            checkButton.textContent = 'Answered';
+          });
+        }
+      });
+
+      function showFeedback(container, message, type) {
+        container.innerHTML = message;
+        container.className = 'quiz-feedback';
+        container.classList.add(type + '-feedback');
+        container.style.display = 'block';
+      }
+    });
+  </script>
 </body>
 </html>

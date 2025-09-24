@@ -86,7 +86,10 @@ permalink: /
 </div>
 
 <!-- Interactive Quiz -->
-<div class="quiz-question">
+<div class="quiz-question"
+     data-correct-answer="b"
+     data-correct-text="Correct! The Nextstrain module is specifically designed for phylogenetic and geotemporal analysis, allowing users to visualize viral evolution and spread patterns over time and geography."
+     data-incorrect-text="Not quite right. The correct answer is the Nextstrain module.">
 <strong>QUIZ:</strong> Which module in INSaFLU is specifically used for phylogenetic and geotemporal analysis?
 <div class="quiz-options">
 <label><input type="radio" name="q1" value="a"> TELEVIR module</label>
@@ -94,11 +97,8 @@ permalink: /
 <label><input type="radio" name="q1" value="c"> QC module</label>
 <label><input type="radio" name="q1" value="d"> Upload module</label>
 </div>
-<details><summary>✓ Check your answer</summary>
-<div class="correct-answer">
-<strong>Correct Answer:</strong> Nextstrain module - This integrated module provides comprehensive phylogenetic and geotemporal analysis capabilities, allowing users to visualize viral evolution and spread patterns over time and geography.
-</div>
-</details>
+<button class="check-answer-btn">Check Answer</button>
+<div class="quiz-feedback"></div>
 </div>
 
 <!-- Self-Assessment -->
@@ -165,7 +165,10 @@ permalink: /
 ## <a id="LO3">3 - Generate consensus sequences and characterize them</a>
 
 <!-- Advanced Quiz with Multiple Scenarios -->
-<div class="quiz-question">
+<div class="quiz-question"
+     data-correct-answer="c"
+     data-correct-text="Excellent choice! Investigating coverage gaps and considering re-sequencing is the best approach. While 85% coverage might be acceptable for some analyses, understanding which regions are missing is crucial. Key genes like spike protein should have good coverage for meaningful phylogenetic analysis."
+     data-incorrect-text="That's not the optimal approach for quality genomic surveillance.">
 <strong>SCENARIO QUIZ:</strong> You receive a consensus sequence with 85% genome coverage. What should be your next step?
 <div class="quiz-options">
 <label><input type="radio" name="q3" value="a"> Accept it as is - 85% is sufficient</label>
@@ -173,11 +176,8 @@ permalink: /
 <label><input type="radio" name="q3" value="c"> Investigate coverage gaps and consider re-sequencing</label>
 <label><input type="radio" name="q3" value="d"> Only use it for basic identification</label>
 </div>
-<details><summary>🔬 Expert analysis</summary>
-<div class="correct-answer">
-<strong>Best Approach:</strong> Investigate coverage gaps and consider re-sequencing. While 85% coverage might be acceptable for some analyses, understanding which regions are missing is crucial. Key genes like spike protein should have good coverage for meaningful analysis.
-</div>
-</details>
+<button class="check-answer-btn">Check Answer</button>
+<div class="quiz-feedback"></div>
 </div>
 
 <!-- Complex Learning Progression -->
@@ -271,7 +271,10 @@ permalink: /
 </div>
 
 <!-- Final Challenge Question -->
-<div class="quiz-question">
+<div class="quiz-question"
+     data-correct-answer="c"
+     data-correct-text="Outstanding! A comprehensive analysis including epidemiological metadata is the gold standard approach. This involves: (1) Quality control and consensus generation, (2) Integration of spatial and temporal metadata, (3) Inclusion of relevant regional context sequences, (4) Nextstrain analysis for transmission pattern visualization, (5) Correlation with epidemiological investigation data, (6) Reporting suitable for public health action."
+     data-incorrect-text="While that's part of the process, a comprehensive epidemiological approach would be more effective for outbreak investigation.">
 <strong>INTEGRATION CHALLENGE:</strong> A local health department reports a cluster of COVID-19 cases. You have samples from 15 patients collected over 3 weeks. Design your INSaFLU analysis strategy.
 <div class="quiz-options">
 <label><input type="radio" name="q4" value="a"> Sequence all samples and run standard pipeline</label>
@@ -279,11 +282,8 @@ permalink: /
 <label><input type="radio" name="q4" value="c"> Design comprehensive analysis including epidemiological metadata</label>
 <label><input type="radio" name="q4" value="d"> Focus only on variant identification</label>
 </div>
-<details><summary>🏆 Expert strategy</summary>
-<div class="correct-answer">
-<strong>Comprehensive Approach:</strong> Design comprehensive analysis including epidemiological metadata. This involves: (1) Quality control and consensus generation, (2) Integration of spatial and temporal metadata, (3) Inclusion of relevant regional context sequences, (4) Nextstrain analysis for transmission pattern visualization, (5) Correlation with epidemiological investigation data, (6) Reporting suitable for public health action.
-</div>
-</details>
+<button class="check-answer-btn">Check Answer</button>
+<div class="quiz-feedback"></div>
 </div>
 
 
