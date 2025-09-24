@@ -32,22 +32,20 @@ permalink: /
 
 
 
-## <a id="LO1">1 - The High Throughput Sequencing Workflow</a>
+## <a id="LO1">1 - Broadly describe the INSaFLU platform</a>
 
 ![NGS Workflow](images/NGSworkflow.jpg)
 
-**QUESTION**: Can you broadly describe commmon steps in most high throughput sequencing workflows?
+**QUESTION**: Can you broadly the main functionalities of INSaFLU?
 <details><summary>Click Here to see the answer</summary><p>
 
-- Extraction and purification of the DNA template (even RNA must usually be converted to cDNA)
+- Upload of NGS data, QC and rapid identification
 <br/>
-- Fragmentation of the DNA template (into a size range that can be accommodated by the machine)
-<br/>
-- Attachment of sequencing tags (to enable reading by the machine)
+- Generation of consensus sequences and their characterization
 <br/>  
-- Amplification of signal (usually trough PCR, often already in the machine)
+- Nextstrain module for phylogenetic and geotemporal analysis.
 <br/>  
-- Reading of signal and conversion into nucleotide bases
+- TELEVIR module for virus detection
   
 </p></details>
 <br/>
