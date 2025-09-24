@@ -223,6 +223,246 @@
       margin: 1rem 0;
     }
 
+    /* Quiz and Interactive Elements */
+    .quiz-question {
+      background: linear-gradient(135deg, #fff3cd 0%, #f8f9fa 100%);
+      border: 2px solid #ffc107;
+      border-radius: 12px;
+      padding: 1.5rem;
+      margin: 2rem 0;
+      position: relative;
+    }
+
+    .quiz-question::before {
+      content: "🧩";
+      position: absolute;
+      top: -10px;
+      left: 20px;
+      background: white;
+      padding: 5px 10px;
+      border-radius: 50%;
+      font-size: 1.2rem;
+      box-shadow: var(--shadow-light);
+    }
+
+    .quiz-options {
+      margin: 1rem 0;
+    }
+
+    .quiz-options label {
+      display: block;
+      padding: 0.8rem 1rem;
+      margin: 0.5rem 0;
+      background: white;
+      border: 1px solid #dee2e6;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      font-weight: 400;
+    }
+
+    .quiz-options label:hover {
+      background: var(--light-blue);
+      border-color: var(--primary-blue);
+      transform: translateX(5px);
+    }
+
+    .quiz-options input[type="radio"] {
+      margin-right: 0.8rem;
+      accent-color: var(--primary-blue);
+    }
+
+    .correct-answer {
+      background: linear-gradient(135deg, #d4edda 0%, #c3e6cb 100%);
+      border: 2px solid #28a745;
+      border-radius: 8px;
+      padding: 1.2rem;
+      color: #155724;
+      font-weight: 500;
+    }
+
+    .incorrect-feedback {
+      background: linear-gradient(135deg, #f8d7da 0%, #f5c6cb 100%);
+      border: 2px solid #dc3545;
+      border-radius: 8px;
+      padding: 1.2rem;
+      color: #721c24;
+      font-weight: 500;
+    }
+
+    /* Self-Check Components */
+    .self-check {
+      background: linear-gradient(135deg, #e2f3ff 0%, #f8f9fa 100%);
+      border: 2px solid var(--accent-blue);
+      border-radius: 12px;
+      padding: 1.5rem;
+      margin: 2rem 0;
+      position: relative;
+    }
+
+    .self-check::before {
+      content: "✅";
+      position: absolute;
+      top: -10px;
+      left: 20px;
+      background: white;
+      padding: 5px 10px;
+      border-radius: 50%;
+      font-size: 1.2rem;
+      box-shadow: var(--shadow-light);
+    }
+
+    .checklist ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .checklist li {
+      padding: 0.8rem;
+      margin: 0.5rem 0;
+      background: white;
+      border-radius: 6px;
+      font-weight: 500;
+      box-shadow: var(--shadow-light);
+      border-left: 4px solid var(--accent-blue);
+      transition: all 0.3s ease;
+    }
+
+    .checklist li:hover {
+      transform: translateX(5px);
+    }
+
+    /* Progressive Learning */
+    .learning-progression {
+      background: linear-gradient(135deg, #f0f8ff 0%, var(--light-blue) 100%);
+      border: 2px solid var(--primary-blue);
+      border-radius: 15px;
+      padding: 2rem;
+      margin: 2rem 0;
+      position: relative;
+    }
+
+    .learning-progression::before {
+      content: "🎯";
+      position: absolute;
+      top: -10px;
+      left: 20px;
+      background: white;
+      padding: 5px 10px;
+      border-radius: 50%;
+      font-size: 1.2rem;
+      box-shadow: var(--shadow-light);
+    }
+
+    .learning-progression h3 {
+      margin-top: 0;
+      color: var(--primary-blue);
+      text-align: center;
+    }
+
+    .step-1, .step-2, .step-3, .step-4 {
+      margin: 1.5rem 0;
+    }
+
+    .step-1 summary, .step-2 summary, .step-3 summary, .step-4 summary {
+      background: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-blue) 100%);
+      font-size: 1.1rem;
+      position: relative;
+      padding-left: 3rem;
+    }
+
+    .step-1 summary::before { content: "1️⃣"; position: absolute; left: 1rem; }
+    .step-2 summary::before { content: "2️⃣"; position: absolute; left: 1rem; }
+    .step-3 summary::before { content: "3️⃣"; position: absolute; left: 1rem; }
+    .step-4 summary::before { content: "4️⃣"; position: absolute; left: 1rem; }
+
+    /* Hint System */
+    .hint-level {
+      margin: 0.5rem 0;
+    }
+
+    .hint-level summary {
+      background: linear-gradient(135deg, #ffc107 0%, #e0a800 100%);
+      color: #212529;
+      font-size: 0.9rem;
+      padding: 0.8rem 1.2rem;
+    }
+
+    .hint-level summary:hover {
+      background: linear-gradient(135deg, #e0a800 0%, #d39e00 100%);
+    }
+
+    .hint-content {
+      background: #fff3cd;
+      border: 2px solid #ffc107;
+      border-top: none;
+      padding: 1rem;
+      font-style: italic;
+      color: #856404;
+    }
+
+    .full-answer {
+      margin-top: 0.5rem;
+    }
+
+    /* Enhanced Answer Content */
+    .answer-content {
+      background: white;
+      padding: 1.5rem;
+      border: 2px solid var(--primary-blue);
+      border-top: none;
+      border-radius: 0 0 8px 8px;
+      box-shadow: var(--shadow-light);
+    }
+
+    .answer-content ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .answer-content li {
+      background: var(--light-blue);
+      margin: 0.8rem 0;
+      padding: 1rem;
+      border-radius: 6px;
+      border-left: 4px solid var(--primary-blue);
+      transition: all 0.3s ease;
+    }
+
+    .answer-content li:hover {
+      transform: translateX(5px);
+      box-shadow: var(--shadow-light);
+    }
+
+    .answer-content li::before {
+      content: "✓";
+      color: var(--primary-blue);
+      font-weight: bold;
+      margin-right: 0.8rem;
+    }
+
+    /* Try-it-yourself sections */
+    .try-it-yourself {
+      background: linear-gradient(135deg, #e8f5e8 0%, #f0fdf0 100%);
+      border: 2px solid #22c55e;
+      border-radius: 12px;
+      padding: 1.5rem;
+      margin: 2rem 0;
+      position: relative;
+    }
+
+    .try-it-yourself::before {
+      content: "💻";
+      position: absolute;
+      top: -10px;
+      left: 20px;
+      background: white;
+      padding: 5px 10px;
+      border-radius: 50%;
+      font-size: 1.2rem;
+      box-shadow: var(--shadow-light);
+    }
+
     @media (max-width: 768px) {
       .course-title {
         font-size: 2.2rem;
@@ -235,6 +475,14 @@
 
       .learning-objectives li, .learning-outcomes li {
         padding: 0.8rem 1rem;
+      }
+
+      .quiz-options label {
+        padding: 0.6rem 0.8rem;
+      }
+
+      .learning-progression {
+        padding: 1.5rem 1rem;
       }
     }
   </style>
